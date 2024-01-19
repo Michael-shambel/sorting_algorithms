@@ -10,7 +10,7 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *cur_node, *temp;
 
-	cur_node = list->next;
+	cur_node = (*list)->next;
 
 	while(cur_node)
 	{
@@ -26,7 +26,7 @@ void insertion_sort_list(listint_t **list)
 
 			cur_node->prev->next = cur_node;
 			cur_node->next->prev = cur_node;
-			print_list(list);
+			print_list(*list);
 		}
 		cur_node = temp;
 	}
