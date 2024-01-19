@@ -1,6 +1,6 @@
 #include "sort.h"
 /**
- * @swap - a function that is needed to swap two elements
+ * swap - a function that is needed to swap two elements
  * @array: function of the array to be swapped
  * @i: the first element to be swapped
  * @j: the second element to be swaapped
